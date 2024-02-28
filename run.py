@@ -97,14 +97,13 @@ def load_dataset(byte, flat=False, whole=False, n_traces=None,
 
 def main():
 
-    _ret = load_dataset(
-        byte=2, n_traces=200000, dataset='training'
+    _ret1 = load_dataset(
+        byte=2, n_traces=20000, dataset='training'
     )
-    print(_ret)
-    _ret = load_dataset(
-        byte=2, n_traces=50000, dataset='attack'
+    _ret2 = load_dataset(
+        byte=2, n_traces=5000, dataset='attack'
     )
-    print(_ret)
+    print(_ret2)
 
 
 
