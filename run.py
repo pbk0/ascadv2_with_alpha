@@ -207,7 +207,8 @@ def main():
     # fit the model
     _ret1 = load_dataset(
         byte=2,
-        n_traces=200000,
+        # n_traces=200000,
+        n_traces=20000,
         # n_traces_val=50000,
         n_traces_val=10000,
         dataset='training'
