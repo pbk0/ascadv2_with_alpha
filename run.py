@@ -206,7 +206,11 @@ def main():
     # ------------------------------------------------------- 01
     # fit the model
     _ret1 = load_dataset(
-        byte=2, n_traces=200000, n_traces_val=50000, dataset='training'
+        byte=2,
+        n_traces=200000,
+        # n_traces_val=50000,
+        n_traces_val=10000,
+        dataset='training'
     )
     _train_ds = make_tf_dataset(_ret1[0], 128)
     _validate_ds = make_tf_dataset(_ret1[1], 128)
