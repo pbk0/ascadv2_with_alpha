@@ -227,8 +227,16 @@ def main():
     _attack_ds = make_tf_dataset(_ret2, 128)
     
     # print(_ret2)
+    
+
+def test_targets():
+    _training = read_from_h5_file(n_traces=1000, dataset='training', load_plaintexts=True)
+    _attack = read_from_h5_file(n_traces=1000, dataset='attack', load_plaintexts=True)
+    
+    print("tttt")
 
 
 
 if __name__ == '__main__':
-    main()
+    test_targets()
+    # main()
